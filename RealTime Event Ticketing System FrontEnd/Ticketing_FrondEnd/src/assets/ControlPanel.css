@@ -1,0 +1,62 @@
+.control-panel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 40px auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.start-button {
+  background: linear-gradient(45deg, #28a745, #34e58e);
+  color: white;
+}
+
+.start-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #34e58e, #28a745);
+}
+
+.stop-button {
+  background: linear-gradient(45deg, #dc3545, #ff6b6b);
+  color: white;
+}
+
+.stop-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #ff6b6b, #dc3545);
+}
+
+.vendor-button {
+  background: linear-gradient(45deg, #007bff, #42aaff);
+  color: white;
+}
+
+.vendor-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #42aaff, #007bff);
+}
+
+.customer-button {
+  background: linear-gradient(45deg, #ffc107, #ffda47);
+  color: black;
+}
+
+.customer-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #ffda47, #ffc107);
+}

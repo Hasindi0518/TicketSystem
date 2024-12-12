@@ -1,0 +1,90 @@
+.configuration-form-container {
+  background: linear-gradient(135deg, #6a0dad, #ff7eb3);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 40px auto;
+  font-family: 'Arial', sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2.config {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: white;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff7eb3;
+  box-shadow: 0 0 10px rgba(255, 126, 179, 0.5);
+  transform: scale(1.02);
+  outline: none;
+}
+
+.submit-button {
+  background: linear-gradient(45deg, #08ba4f, #33d17a);
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background: linear-gradient(45deg, #33d17a, #08ba4f);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
